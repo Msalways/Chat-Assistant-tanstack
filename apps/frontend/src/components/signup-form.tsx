@@ -1,6 +1,8 @@
 import React from 'react'
 import { useForm } from '@tanstack/react-form'
 import { Link, useNavigate } from '@tanstack/react-router'
+import { toast } from 'sonner'
+import Swal from 'sweetalert2'
 import {
   Card,
   CardContent,
@@ -14,8 +16,6 @@ import { Input } from './ui/input'
 
 import { cn } from '@/lib/utils'
 import useSignupMutation from '@/lib/hooks/auth/useSignupMutation'
-import Swal from 'sweetalert2'
-import { toast } from 'sonner'
 
 export function SignupForm({
   className,
