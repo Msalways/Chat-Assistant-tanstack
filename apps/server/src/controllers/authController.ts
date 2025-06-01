@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import prisma from "../../prisma/prismaClient";
+import prisma from "../prisma/prismaClient";
 import bcrypt from "bcrypt";
 import { User, UserCredentials } from "../modals/user";
 import { Strategy as LocalStrategy } from "passport-local";

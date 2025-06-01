@@ -1,12 +1,11 @@
+import config from "./config/config";
 import express from "express";
 import originRoutes from "./originRoutes";
 import session from "express-session";
 import MongoStore from "connect-mongo";
-import config from "./config/config";
 import passport from "passport";
 import cors from "cors";
 import { getMongoClient } from "./lib/mongoClient";
-import authRouter from "./routes/authRouter";
 import validateUserSession from "./middleware/validateSession";
 import errorHandler from "./middleware/errorHandler";
 

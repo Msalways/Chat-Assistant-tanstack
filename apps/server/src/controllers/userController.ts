@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { UserModel } from "../modals/user";
-import prisma from "../../prisma/prismaClient";
-import randomPassword from "../../reusables/random_passoword";
+import prisma from "../prisma/prismaClient";
+import randomPassword from "../reusables/random_passoword";
 import bcrypt from "bcrypt";
 
 const createUser = async (req: Request, res: Response, next: NextFunction) => {

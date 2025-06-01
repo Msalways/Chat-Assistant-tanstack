@@ -29,7 +29,8 @@
     "openai": "^4.103.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
-    "prisma": "^6.8.2"
+    "prisma": "^6.8.2",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
