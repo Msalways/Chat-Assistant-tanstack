@@ -10,7 +10,7 @@ import {
 } from "@langchain/core/prompts";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { MongoDBChatMessageHistory } from "@langchain/mongodb";
-import prisma from "../prisma/prismaClient";
+import prisma from "../../prisma/prismaClient";
 import { getChatHistoryCollection } from "../lib/mongoClient";
 
 const llm = new ChatOpenAI({

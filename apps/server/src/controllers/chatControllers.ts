@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import prisma from "../prisma/prismaClient";
+import prisma from "../../prisma/prismaClient";
 import chatOnOpenAi from "../llm/openai";
 
 declare module "express-serve-static-core" {
